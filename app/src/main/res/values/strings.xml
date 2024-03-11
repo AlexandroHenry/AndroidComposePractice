@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="text_home">홈</string>
+    <string name="text_chat">채팅</string>
+    <string name="text_settings">설정</string>
+</resources>
