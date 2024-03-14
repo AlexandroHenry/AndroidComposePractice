@@ -51,7 +51,14 @@ fun NavGraph(navController: NavHostController) {
             Scaffold(bottomBar = { TabView(tabBarItems, navController) }) {
                 NavHost(navController = navController, startDestination = homeTab.title) {
                     composable(homeTab.title) {
-                        HomeScreen()
+                        HomeScreen(
+                            listOf(
+                                "https://plus.unsplash.com/premium_photo-1684952851101-6ab3e41b0448?q=80&w=1254&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                                "https://images.unsplash.com/photo-1705374464124-42c35f96da9f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                                "https://images.unsplash.com/photo-1707423948446-95e2604d4f8d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            )
+
+                        )
                     }
                     composable(alertsTab.title) {
                         Text(alertsTab.title)
@@ -67,7 +74,6 @@ fun NavGraph(navController: NavHostController) {
         }
     }
 }
-
 
 
 data class TabBarItem(
