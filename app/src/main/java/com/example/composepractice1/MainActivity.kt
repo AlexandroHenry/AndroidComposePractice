@@ -19,10 +19,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposePractice1Theme {
-                navController = rememberNavController()
-                NavGraph(navController = navController)
-            }
+
+            navController = rememberNavController()
+            NavGraph(navController = navController)
         }
     }
 }
