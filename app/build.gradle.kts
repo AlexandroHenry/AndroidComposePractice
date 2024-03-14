@@ -73,4 +73,8 @@ dependencies {
     // dagger hilt
     implementation ("com.google.dagger:hilt-android:2.38.1")
     kapt ("com.google.dagger:hilt-android-compiler:2.38.1")
+
+    // coil
+    implementation("io.coil-kt:coil-compose:1.4.0")
+
 }
